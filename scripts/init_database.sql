@@ -18,9 +18,6 @@ DROP DATABASE IF EXISTS datawarehouse;
 -- Create database
 CREATE DATABASE datawarehouse;
 
--- Connect to the new database
--- (In pgAdmin, select it manually OR use psql: \c datawarehouse)
-
 -- Create Schemas
 CREATE SCHEMA IF NOT EXISTS bronze;
 CREATE SCHEMA IF NOT EXISTS silver;
