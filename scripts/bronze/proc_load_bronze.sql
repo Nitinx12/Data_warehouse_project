@@ -157,7 +157,6 @@ BEGIN
     RAISE NOTICE '================================================';
 
 
--- ⭐ EXCEPTION BLOCK (TRY/CATCH equivalent)
 EXCEPTION
     WHEN OTHERS THEN
         RAISE NOTICE '================================================';
