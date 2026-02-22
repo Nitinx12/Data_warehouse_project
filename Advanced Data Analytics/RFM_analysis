@@ -1,0 +1,85 @@
+WITH Customer_metrics AS(
+	SELECT
+		F.customer_key,
+		MAX(F.order_date) AS last_purchase_date,
+		COUNT(F.order_date) AS frequency,
+		SUM(F.sales) AS monetary
+	FROM gold.fact_sales AS F
+	GROUP BY
+		F.customer_key
+),
+Dataset_date AS(
+	SELECT MAX(order_date) AS last_dataset_date
+	FROM gold.fact_sales
+),
+RFM_base AS(
+	SELECT
+		C.customer_key,
+		GD.last_dataset_date - C.last_purchase_date AS  recency_days,
+		C.frequency,
+		C.monetary
+	FROM Customer_metrics AS C
+	CROSS JOIN Dataset_date AS GD
+),
+RFM_scores AS(
+	SELECT
+		customer_key,
+		recency_days,
+		frequency,
+		monetary,
+		NTILE(5) OVER(ORDER BY recency_days DESC) AS r_score,
+		NTILE(5) OVER(ORDER BY frequency) AS f_score,
+		NTILE(5) OVER(ORDER BY monetary) AS m_score
+	FROM RFM_base
+)
+SELECT
+	customer_key,
+	recency_days,
+	frequency,
+	ROUND(monetary,2) AS monetary,
+	r_score,
+	f_score,
+	m_score,
+	CONCAT(r_score, f_score, m_score) AS rfm_code,
+	CASE
+		WHEN r_score >= 4 AND f_score >= 4 AND m_score >= 4
+			THEN 'Champions'
+		WHEN r_score >= 3 AND f_score >= 4
+			THEN 'loyal Customers'
+		WHEN r_score >= 4 AND f_score <= 2
+			THEN 'New customers'
+		WHEN r_score = 3 AND f_score = 3
+			THEN 'Potential Loyalists'
+		WHEN r_score <= 2 AND f_score >= 4
+			THEN 'At risk'
+		WHEN r_score <= 2 AND f_score <= 2
+			THEN 'Lost Customers'
+		ELSE 'Others'
+	END AS customer_segment
+FROM RFM_scores
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
