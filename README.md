@@ -22,21 +22,14 @@ Instead of just dumping data into tables, I structured the database using the **
 
 3. **Gold Layer (The Star Schema)**:This is where the magic happens. I joined the scattered CRM customer data with the ERP product data to create a clean, business-ready Star Schema `(ddl_gold.sql)`. I used `ROW_NUMBER()` to generate clean surrogate keys for my Fact and Dimension views..
 
+<img width="2816" height="1536" alt="Gemini_Generated_Image_epz92xepz92xepz9" src="https://github.com/user-attachments/assets/b859cdf3-8180-4975-b2b2-9793c1beff18" />
 
 ---
-## Project Overview
+## Data Sources
+The pipeline ingests CSV data from two distinct simulated operational systems:
+1. CRM System: `crm_cust_info`, `crm_prd_info`, `crm_sales_details`
+2. ERP System: `erp_cust_az12` (Demographics), `erp_loc_a101` (Location), `erp_px_cat_g1v2` (Product Categories)
 
-This project involves:
-
-1. **Data Architecture**: Designing a Modern Data Warehouse Using Medallion Architecture **Bronze**, **Silver**, and **Gold** layers.
-2. **ETL Pipelines**: Extracting, transforming, and loading data from source systems into the warehouse.
-3. **Data Modeling**: Developing fact and dimension tables optimized for analytical queries.
-4. **Analytics & Reporting**: Creating SQL-based reports and dashboards for actionable insights.
-
----
-## Project Requirements
-
-### Building the Data Warehouse
 
 
 
