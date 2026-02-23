@@ -77,6 +77,15 @@ Customer Segmentation Summary (RFM Analysis)
 
 2. **Action:** Launch an automated "We Miss You" email campaign specifically targeting the 2,441 "At Risk" customers, offering a strong 'Comeback Discount' (like 15% off) to win them back before they fall into the "Lost" category forever.
 
+## Power BI Dashboard & Visualizations
+
+To bring these SQL insights to life, an interactive Power BI dashboard was developed.
+
+<img width="1310" height="747" alt="image" src="https://github.com/user-attachments/assets/0f17fefa-8287-4056-a2f6-aa582108ad73" />
+
+
+
+
 
 
 
