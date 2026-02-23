@@ -1,10 +1,11 @@
 # Data Warehouse and Analytics Project
 
+## Overview
+
 Hi, I'm Nitin 👋
 
 Welcome to the **Data Warehouse and Analytics Project** repository!
-
-Usually, data projects start with a perfectly clean CSV file downloaded from the internet. But in the real world, data is messy and scattered across different systems. I built this project to simulate a real business environment: taking raw, disconnected data from two different systems (a CRM and an ERP), building a data warehouse from scratch, cleaning it, and finally extracting business insights.
+This is a complete end-to-end data engineering and analytics solution. I built a modern data warehouse from scratch to process raw, disconnected CSV files into an actionable, interactive Business Intelligence dashboard..
 
 ---
 ## Data Architecture
