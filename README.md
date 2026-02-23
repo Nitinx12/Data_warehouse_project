@@ -39,6 +39,14 @@ The pipeline ingests CSV data from two distinct simulated operational systems:
 * Matplotlib & Seaborn
 * Duckdb
 
+## Our Data-Driven Solution
+To resolve operational inefficiencies, I designed and implemented a **Centralized Relational Database System** using PostgreSQL. This solution transformed raw transactional data into actionable strategic insights.
+
+### Key Technical Implementations & Insights
+
+#### 1. Solved Revenue Blindness
+Bikes account for 96.46% of total sales, while Accessories (2.38%) and Clothing (1.16%) barely make a dent in the overall revenue.
+
 
 
 
