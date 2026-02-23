@@ -62,7 +62,20 @@ To resolve operational inefficiencies, I designed and implemented a **Centralize
 
 1. **Problem:** In our largest segments are "Lost Customers" (3,497) and "At Risk" customers (2,441). This means thousands of past buyers have either already stopped shopping with you or are right on the verge of leaving.
 
-2. **Action:** Launch an automated "We Miss You" email campaign specifically targeting the 2,441 "At Risk" customers, offering a strong 'Comeback Discount' (like 15% off) to win them back before they fall into the "Lost" category forever.
+### Customer Segmentation Summary (RFM Analysis)
+
+| Customer Segment | Total Customers |
+| :--- | :--- |
+| Others | 4,313 |
+| Lost Customers | 3,497 |
+| Loyal Customers | 3,213 |
+| New Customers | 2,512 |
+| At Risk | 2,441 |
+| Champions | 1,739 |
+| Potential Loyalists | 769 |
+| **Total** | **18,484** |
+
+3. **Action:** Launch an automated "We Miss You" email campaign specifically targeting the 2,441 "At Risk" customers, offering a strong 'Comeback Discount' (like 15% off) to win them back before they fall into the "Lost" category forever.
 
 
 
