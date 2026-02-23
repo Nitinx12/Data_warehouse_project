@@ -30,6 +30,15 @@ The pipeline ingests CSV data from two distinct simulated operational systems:
 1. CRM System: `crm_cust_info`, `crm_prd_info`, `crm_sales_details`
 2. ERP System: `erp_cust_az12` (Demographics), `erp_loc_a101` (Location), `erp_px_cat_g1v2` (Product Categories)
 
+---
+## Built With
+* Python
+* SQL (PostgreSQL)
+* Pandas
+* Jupyter Notebook
+* Matplotlib & Seaborn
+* Duckdb
+
 
 
 
