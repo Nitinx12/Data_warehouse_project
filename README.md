@@ -176,6 +176,23 @@ Data Warehouse and Analytics Project/
     └─ Images, ERD diagrams, screenshots for README
 ```
 
+---
+## Installation & Usage
+To replicate this data warehouse and analytics project, follow these steps:
+
+1. **Clone the Repository:**
+   ```Bash
+   git clone git clone https://github.com/Nitinx12/Data_warehouse_project.gitcd Data_warehouse_project
+   ```
+2. **Set Up PostgreSQL Database:**
+   * Ensure you have PostgreSQL installed.
+   * Create the database and set up the Medallion Architecture schemas (bronze, silver, gold) by executing the initialization script:
+   ```SQL
+   -- Execute the script located at:
+    database/init_database.sql
+   ```
+   * Create the necessary tables by running the DDL scripts located in the database/ddl/ subdirectories (bronze/, silver/, gold/).
+
 
 
 
