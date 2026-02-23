@@ -52,6 +52,12 @@ To resolve operational inefficiencies, I designed and implemented a **Centralize
 
 3. **Action:** Implement a mandatory "Frequently Bought Together" bundling feature at checkout that offers customers a 10-15% discount on relevant accessories and clothing when purchased alongside a bike.
 
+#### 2. Poor Customer Retention
+
+1. **Problem:** We lose almost all our new customers right away. Out of 1,164 people who bought something in March, only 44 (3%) came back to buy again the next month.
+
+2. **Action:** Send a follow-up email with a special discount three weeks after their first purchase to encourage them to come back and shop again
+
 
 
 
