@@ -39,6 +39,7 @@ The pipeline ingests CSV data from two distinct simulated operational systems:
 * Matplotlib & Seaborn
 * Duckdb
 
+---
 ## Our Data-Driven Solution
 To resolve operational inefficiencies, I designed and implemented a **Centralized Relational Database System** using PostgreSQL. This solution transformed raw transactional data into actionable strategic insights.
 
@@ -83,7 +84,97 @@ To bring these SQL insights to life, an interactive Power BI dashboard was devel
 
 <img width="1310" height="747" alt="image" src="https://github.com/user-attachments/assets/0f17fefa-8287-4056-a2f6-aa582108ad73" />
 
-
+---
+## Project Structure
+```
+Data Warehouse and Analytics Project/
+│
+├── README.md
+│   └─ Project overview, architecture, setup steps, screenshots
+│
+├── docs/
+│   └── data_catalog.md
+│       └─ Business definitions, table descriptions, schema details
+│
+├── datasets/
+│   ├── raw/
+│   │   ├── crm/
+│   │   │   └─ prd_info.csv
+│   │   └── erp/
+│   │       └─ PX_CAT_G1V2.csv
+│   │
+│   └── sample_output/
+│       └─ Optional sample exports for demo purposes
+│
+├── database/
+│   ├── init_database.sql
+│   │   └─ Creates database and schemas (bronze/silver/gold)
+│   │
+│   └── ddl/
+│       ├── bronze/
+│       │   └─ ddl_bronze.sql
+│       │       └─ Raw ingestion tables
+│       │
+│       ├── silver/
+│       │   └─ ddl_silver.sql
+│       │       └─ Cleaned & transformed tables
+│       │
+│       └── gold/
+│           └─ ddl_gold.sql
+│               └─ Business-ready dimensional tables
+│
+├── etl/
+│   ├── bronze/
+│   │   └─ proc_load_bronze.sql
+│   │       └─ Load raw data into bronze layer
+│   │
+│   ├── silver/
+│   │   └─ proc_load_silver.sql
+│   │       └─ Transform bronze → silver
+│   │
+│   └── gold/
+│       └─ proc_load_gold.sql (optional)
+│           └─ Transform silver → gold
+│
+├── tests/
+│   ├── quality_check_silver.sql
+│   │   └─ Data validation rules for silver layer
+│   │
+│   └── quality_check_gold.sql
+│       └─ Business-level validation checks
+│
+├── analytics/
+│   ├── eda/
+│   │   └── eda.sql
+│   │       └─ Exploratory analysis queries
+│   │
+│   ├── advanced_sql/
+│   │   ├── change_over_time.sql
+│   │   ├── cohort_analysis.sql
+│   │   ├── cumulative_analysis.sql
+│   │   ├── data_segmentation.sql
+│   │   ├── part_to_whole_analysis.sql
+│   │   ├── performance_analysis.sql
+│   │   └── rfm_analysis.sql
+│   │       └─ Advanced analytical techniques
+│   │
+│   └── reports/
+│       ├── customer_report.sql
+│       └── product_report.sql
+│           └─ Final business reporting queries
+│
+├── notebooks/
+│   └─ Jupyter notebooks for analysis, prototyping, ML experiments
+│
+├── dashboards/
+│   └── power_bi/
+│       ├── Customer_Report.pbix
+│       └── customer_report.sql
+│           └─ BI dashboard files and query sources
+│
+└── assets/
+    └─ Images, ERD diagrams, screenshots for README
+```
 
 
 
