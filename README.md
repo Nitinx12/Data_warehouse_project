@@ -46,7 +46,7 @@ To resolve operational inefficiencies, I designed and implemented a **Centralize
 
 #### 1. Solved Revenue Blindness
 
-1. **Problem:** Bikes account for 96.46% of total sales, while Accessories (2.38%) and Clothing (1.16%) barely make a dent in the overall revenue, exposing the business to a high single-category risk and leaving high-margin add-on sales on the table
+1. **Problem:** Bikes account for 96.46% of total sales, while Accessories (2.38%) and Clothing (1.16%) barely make a dent in the overall revenue, exposing the business to a high single-category risk and leaving high-margin add-on sales on the table.
 
 <img width="630" height="470" alt="image" src="https://github.com/user-attachments/assets/aeec622c-89d2-431a-b257-eac4d2b58556" />
 
@@ -56,7 +56,13 @@ To resolve operational inefficiencies, I designed and implemented a **Centralize
 
 1. **Problem:** We lose almost all our new customers right away. Out of 1,164 people who bought something in March, only 44 (3%) came back to buy again the next month.
 
-2. **Action:** Send a follow-up email with a special discount three weeks after their first purchase to encourage them to come back and shop again
+2. **Action:** Send a follow-up email with a special discount three weeks after their first purchase to encourage them to come back and shop again.
+
+#### 3. High Customer Churn & At-Risk Base
+
+1. **Problem:** In our largest segments are "Lost Customers" (3,497) and "At Risk" customers (2,441). This means thousands of past buyers have either already stopped shopping with you or are right on the verge of leaving.
+
+2. **Action:** Launch an automated "We Miss You" email campaign specifically targeting the 2,441 "At Risk" customers, offering a strong 'Comeback Discount' (like 15% off) to win them back before they fall into the "Lost" category forever.
 
 
 
