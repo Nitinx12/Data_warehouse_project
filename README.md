@@ -48,7 +48,9 @@ To resolve operational inefficiencies, I designed and implemented a **Centralize
 
 1. **Problem:** Bikes account for 96.46% of total sales, while Accessories (2.38%) and Clothing (1.16%) barely make a dent in the overall revenue, exposing the business to a high single-category risk and leaving high-margin add-on sales on the table
 
-2. **Action:** Implement a mandatory "Frequently Bought Together" bundling feature at checkout that offers customers a 10-15% discount on relevant accessories and clothing when purchased alongside a bike.
+<img width="630" height="470" alt="image" src="https://github.com/user-attachments/assets/aeec622c-89d2-431a-b257-eac4d2b58556" />
+
+3. **Action:** Implement a mandatory "Frequently Bought Together" bundling feature at checkout that offers customers a 10-15% discount on relevant accessories and clothing when purchased alongside a bike.
 
 
 
