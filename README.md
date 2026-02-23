@@ -5,6 +5,7 @@
 Hi, I'm Nitin 👋
 
 Welcome to the **Data Warehouse and Analytics Project** repository!
+
 This is a complete end-to-end data engineering and analytics solution. I built a modern data warehouse from scratch to process raw, disconnected CSV files into an actionable, interactive Business Intelligence dashboard..
 
 ---
