@@ -183,7 +183,7 @@ To replicate this data warehouse and analytics project, follow these steps:
 
 1. **Clone the Repository:**
    ```Bash
-   git clone git clone https://github.com/Nitinx12/Data_warehouse_project.gitcd Data_warehouse_project
+   git clone https://github.com/Nitinx12/Data_warehouse_project.gitcd Data_warehouse_project
    ```
 2. **Set Up PostgreSQL Database:**
    * Ensure you have PostgreSQL installed.
