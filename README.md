@@ -1,4 +1,5 @@
 # Data Warehouse and Analytics Project
+![License](https://img.shields.io/badge/license-MIT-blue) ![Version](https://img.shields.io/badge/version-1.0.0-green)
 
 ## Overview
 
@@ -301,3 +302,16 @@ SELECT
 	END AS avg_monthly_spend
 FROM Metrics
 ```
+---
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+---
+## Contact Information
+
+* **LinkedIn:** [https://www.linkedin.com/in/nitin-k-220651351/](https://www.linkedin.com/in/nitin-k-220651351/)
+* **GitHub:** [https://github.com/Nitinx12](https://github.com/Nitinx12)
+* **Email:** Nitin321x@gmail.com
+
+---
